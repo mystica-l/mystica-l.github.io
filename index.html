@@ -16,9 +16,9 @@
         overflow: auto;
       }
 
-      .header
+      .background
       {
-        background-image: url("Schlitter Sunset.jpg");
+        background-image: url("images/Schlitter Sunset.jpg");
         background-size: cover;
         height: 100vh;
         width: 100%;
@@ -33,18 +33,44 @@
         justify-content: center;
         text-align: center;
       }
-      .name
+      .big-name
       {
         font-size: 125px;
         color: whitesmoke;
         width: 100%;
+        text-shadow: 2px 2px 2px rgb(20, 20, 20, 0.5);
       }
-      .about-me
+      .mini-about-me
       {
         font-size: 40px;
         color:whitesmoke;
+        text-shadow: 2px 2px 2px rgb(20, 20, 20, 0.5);
       }
-
+      .icons
+      {
+        margin-top: 15px;
+      }
+      .icon
+      {
+        transition: filter ease-in-out 0.1s;
+        display: inline-block;
+        width: 50px;
+        filter: drop-shadow(1px 1px 1px black);
+      }
+      .icon:hover 
+      {
+        filter: drop-shadow(2px 2px 2px black);
+      }
+      .line-of-icons
+      {
+        width: 7%;
+        display: inline-block;
+      }
+      .text
+      {
+        height: 100vh;
+        background-color: rgb(31, 31, 48);
+      }
       body 
       {
         margin: 0;
@@ -54,18 +80,47 @@
   </head>
 
   <body>
-    <div class = "header">
+
+    <div class = "background">
 
       <div>
-        <p class = "name">
+        <p class = "big-name">
         Kenny Sun
         </p>
-        <p class = "about-me">
+
+        <p class = "mini-about-me">
         Clemson | Computer Science | Honors College | 2027
         </p>
+
+        <div class = "icons">
+
+            <div class = "line-of-icons">
+              <a href = "https://github.com/mystica-l">
+                <img class = "icon" src="images/github-icon.png">
+              </a>
+            </div>
+
+          <div class = "line-of-icons">
+            <a href = "https://www.linkedin.com/in/kenny-sun-34b044272/">
+              <img class = "icon" src = "images/linkedin-icon.png">
+            </a>
+          </div>
+
+          <div class = "line-of-icons">
+            <a href = "mailto: sunkenny5893@gmail.com">
+              <img class = "icon" src = "images/email-icon.png">
+            </a>
+          </div>
+
+        </div>
+
       </div>
-      
-      </p>
+
     </div>
+    <div class = "text">
+      About Me
+    </div>
+
   </body>
+
 </html>
