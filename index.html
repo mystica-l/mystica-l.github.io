@@ -15,7 +15,11 @@
         display: inline-block;
         overflow: auto;
       }
-
+      body 
+      {
+        margin: 0;
+        background-color: rgb(37, 31, 48);
+      }
       .background
       {
         background-image: url("images/Schlitter Sunset.jpg");
@@ -50,32 +54,44 @@
       {
         margin-top: 15px;
       }
-      .icon
+      .vertical-icon-div
+      {
+        width: 7%;
+        display: inline-block;
+      }
+      .individual-icon
       {
         transition: filter ease-in-out 0.1s;
         display: inline-block;
         width: 50px;
         filter: drop-shadow(1px 1px 1px black);
       }
-      .icon:hover 
+      .individual-icon:hover 
       {
         filter: drop-shadow(2px 2px 2px black);
       }
-      .line-of-icons
+      
+      .about-me
       {
-        width: 7%;
-        display: inline-block;
+        font-family: Kanit, Arial;
+        font-size: 50px;
+        height: 60px;
+        margin-top: 18px;
+        margin-left: 30px;
+        color: whitesmoke;
+        width: 65%;
       }
-      .text
+      .about-me-info
       {
-        height: 100vh;
-        background-color: rgb(31, 31, 48);
+        font-family: Arial;
+        font-size: 25px;
+        height: 300px;
+        margin-top: 18px;
+        margin-left: 30px;
+        color: whitesmoke;
+        width: 65%;
       }
-      body 
-      {
-        margin: 0;
-        background-color: rgb(37, 31, 48);
-      }
+      
     </style>
   </head>
 
@@ -94,21 +110,21 @@
 
         <div class = "icons">
 
-            <div class = "line-of-icons">
+            <div class = "vertical-icon-div">
               <a href = "https://github.com/mystica-l">
-                <img class = "icon" src="images/github-icon.png">
+                <img class = "individual-icon" src="images/github-icon.png">
               </a>
             </div>
 
-          <div class = "line-of-icons">
+          <div class = "vertical-icon-div">
             <a href = "https://www.linkedin.com/in/kenny-sun-34b044272/">
-              <img class = "icon" src = "images/linkedin-icon.png">
+              <img class = "individual-icon" src = "images/linkedin-icon.png">
             </a>
           </div>
 
-          <div class = "line-of-icons">
+          <div class = "vertical-icon-div">
             <a href = "mailto: sunkenny5893@gmail.com">
-              <img class = "icon" src = "images/email-icon.png">
+              <img class = "individual-icon" src = "images/email-icon.png">
             </a>
           </div>
 
@@ -117,8 +133,16 @@
       </div>
 
     </div>
-    <div class = "text">
-      About Me
+    <div class = "about-me">
+      <p>
+        About Me
+      </p>
+    </div>
+    
+    <div class = "about-me-info">
+      <p>
+        Hello! My name is Kenny Sun. I am a Freshman Honors Computer Science Major at Clemson University. I've had a passion for computer science since the days of Scratch in middle school!
+      </p>
     </div>
 
   </body>
