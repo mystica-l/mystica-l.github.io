@@ -44,7 +44,7 @@
         width: 100%;
         text-shadow: 2px 2px 2px rgb(20, 20, 20, 0.5);
       }
-      .mini-about-me
+      .quick-info
       {
         font-size: 40px;
         color:whitesmoke;
@@ -71,41 +71,51 @@
       {
         filter: drop-shadow(2px 2px 2px black);
       }
-      
-      .about-me
+
+      .about-me-div, .projects-div
       {
-        font-family: Kanit, Arial;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .about-me-div
+      {
+        width: 60%;
+      }
+      
+      .about-me-header, .projects-header
+      {
         font-size: 50px;
         height: 60px;
         margin-top: 18px;
         margin-left: 30px;
         color: whitesmoke;
-        width: 65%;
       }
-      .about-me-info
+
+      .about-me-info, .projects-info
       {
         font-family: Arial;
         font-size: 25px;
-        height: 300px;
+        height: 500px;
         margin-top: 18px;
         margin-left: 30px;
         color: whitesmoke;
-        width: 65%;
       }
-      
     </style>
   </head>
 
   <body>
 
+    <!-- Background has the image, name, quick info, and icons -->
     <div class = "background">
 
       <div>
+
         <p class = "big-name">
         Kenny Sun
         </p>
 
-        <p class = "mini-about-me">
+        <p class = "quick-info">
         Clemson | Computer Science | Honors College | 2027
         </p>
 
@@ -134,21 +144,42 @@
       </div>
 
     </div>
-    <div class = "about-me">
-      <p>
-        About Me
-      </p>
+
+    <div>
+
+      <div class = "about-me-div">
+        <div class = "about-me-header">
+          <p>
+            About Me
+          </p>
+        </div>
+
+        <div class = "about-me-info">
+          <p>
+            Hello! My name is Kenny Sun. I am a Freshman Computer Science Major at Clemson University.
+            I've always had an interest in computer science since the days of Scratch in middle school!
+            In my free time I enjoy spending time with friends, programming fun side projects (like this website), 
+            and pursuing my goals.
+          </p>
+        </div>
+      </div>
+      
+      <div class = "projects-div">
+        <div class = "projects-header">
+          <p>
+            Projects
+          </p>
+        </div>
+        
+        <div class = "projects-info">
+          <p>
+            Projectss
+          </p>
+        </div>
+      </div>
+      
     </div>
     
-    <div class = "about-me-info">
-      <p>
-        Hello! My name is Kenny Sun. I am a Freshman Computer Science Major at Clemson University.
-        I've always had an interest in computer science since the days of Scratch in middle school!
-        In my free time I enjoy spending time with friends, programming fun side projects (like this website),
-        and improving myself.
-      </p>
-    </div>
-
   </body>
 
 </html>
