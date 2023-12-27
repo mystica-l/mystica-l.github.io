@@ -18,7 +18,7 @@
       body 
       {
         margin: 0;
-        background-color: rgb(37, 31, 48);
+        background-color: rgb(32, 29, 53);
       }
       .background
       {
@@ -40,14 +40,14 @@
       .big-name
       {
         font-size: 125px;
-        color: whitesmoke;
+        color: rgb(235, 235, 235);
         width: 100%;
         text-shadow: 2px 2px 2px rgb(20, 20, 20, 0.5);
       }
       .quick-info
       {
         font-size: 40px;
-        color:whitesmoke;
+        color: rgb(235, 235, 235);
         text-shadow: 2px 2px 2px rgb(20, 20, 20, 0.5);
       }
       .icons
@@ -80,27 +80,51 @@
 
       .about-me-div
       {
-        width: 60%;
+        width: 50%;
       }
-      
+      .projects-div
+      {
+        width: 49%;
+      }
       .about-me-header, .projects-header
       {
         font-size: 50px;
         height: 60px;
-        margin-top: 18px;
+        margin-top: 10px;
         margin-left: 30px;
-        color: whitesmoke;
+        color: rgb(209, 209, 209);
       }
 
-      .about-me-info, .projects-info
+      .about-me
       {
         font-family: Arial;
         font-size: 25px;
-        height: 500px;
-        margin-top: 18px;
+        height: 600px;
+        margin-top: 12px;
         margin-left: 30px;
-        color: whitesmoke;
+        color: rgb(209, 209, 209);
+        display:block;
       }
+      .project-title
+      {
+        font-family: Arial;
+        font-size: 25px;
+        margin-top: 12px;
+        margin-left: 30px;
+        color: rgb(221, 115, 115);
+        display:block;
+      }
+      .project-info
+      {
+        font-family: Arial;
+        font-size: 20px;
+        margin-left: 30px;
+        color: rgb(209, 209, 209);
+        display:block;
+      }
+
+
+
     </style>
   </head>
 
@@ -154,7 +178,7 @@
           </p>
         </div>
 
-        <div class = "about-me-info">
+        <div class = "about-me">
           <p>
             Hello! My name is Kenny Sun. I am a Freshman Computer Science Major at Clemson University.
             I've always had an interest in computer science since the days of Scratch in middle school!
@@ -171,10 +195,37 @@
           </p>
         </div>
         
-        <div class = "projects-info">
-          <p>
-            Projectss
-          </p>
+        <div class = "projects">
+          <div class = "project-subsection">
+            <div class = "project-title">
+              <p>Poker Hand Evaluator</p>
+            </div>
+            <div class = "project-info">
+              <p>Terminal program that evaluated the strength of players' hands in Texas Hold Em' Poker depending on the hole and community cards.
+                <br>Skills Used: C++, pointers and dynamic memory allocation, basic combinatorics, OOP, multi-file programming, makefiles</p>
+            </div>
+          </div>
+
+          <div class = "project-subsection">
+            <div class = "project-title">
+              <p>Personal Website</p>
+            </div>
+            <div class = "project-info">
+              <p>The static website that you're looking at! I'm also looking to transform some of my terminal applications into web apps on here.<br>
+                Skills Used: Basic HTMl and CSS</p>
+            </div>
+          </div>
+
+          <div class = "project-subsection">
+            <div class = "project-title">
+              <p>Rotating Caesar Cipher Encoder and Decoder</p>
+            </div>
+            <div class = "project-info">
+              <p>CPSC 1070 project that involved encoding messages using a "rotating Caesar shift" or a vignere cipher. 
+                Side usage of decoding encrypted messages without a known key (assuming the key was a 3+ letter word and the message consisted of only words).<br>
+                Skills Used: C++, basic data structures &#40;linked lists and queues&#41;, emacs, vim, OOP, multi-file programming, pointers, makefiles</p>
+            </div>
+          </div>
         </div>
       </div>
       
